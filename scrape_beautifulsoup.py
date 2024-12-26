@@ -47,7 +47,7 @@ for link in soup.find_all('a', href=True): # This finds all <a>
 
 
 print(csv_links)
-os.makedirs('webscraping_eliot/csv_results', exist_ok=True)
+os.makedirs('webscraping_USPS/csv_results', exist_ok=True)
 
 #os.makedirs('csv_output', exist_ok = True)
 
@@ -61,7 +61,7 @@ for csv_url in csv_links:
     # becomes original -> vt.csv
     file_prefix = original.split('.')[0] # this gives us vt
 
-    file_name = f"webscraping_eliot/csv_results/file_{file_prefix}.csv"
+    file_name = f"webscraping_USPS/csv_results/file_{file_prefix}.csv"
 
     with open(file_name, 'wb') as file:
         file.write(csv_response.content)
@@ -84,7 +84,7 @@ for idx, csv_url in enumerate(csv_links):
     wait
     csv_response = requests.get(csv_url)
     # Sends a GET request to csv URL to fetch raw content
-    file_name = f"webscraping_eliot/csv_results/file_{idx + 1}.csv"
+    file_name = f"webscraping_USPS/csv_results/file_{idx + 1}.csv"
     with open(file_name, 'wb') as file:
         file.write(csv_response.content)
     print(f"downloaded: {file_name}")
