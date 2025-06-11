@@ -89,7 +89,7 @@ After accessing just one csv as a dataframe inside my python notebook I noticed 
 
 
 
-<img src="images/image.png" alt="image.png" width="50%" height="50%" />
+<img src="images/image.png" alt="image.png" width="40%" height="40%" />
 
 
 One file individually looks great! Let’s access every file and append them into one dataframe. Because each dataframe has the same column names, we can keep our number of columns the same, and instead add on more rows (for each state).
@@ -104,7 +104,8 @@ After appending every csv into one dataframe, we finally have our combined dataf
 
 I decided to look at the dataframe and see what our data looks like.
 
-![image.png](images/image%201.png)
+<img src="images/image%201.png" alt="image.png" width="40%" height="40%" />
+
 
 Our dataframe has a few new columns, with some looking like they’re state specific (OHIO 1 for example could be an excess column from Ohio, same with Akron which is located in Ohio and home of Lebron James and Stephen Curry). 
 
