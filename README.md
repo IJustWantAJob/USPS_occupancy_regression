@@ -64,6 +64,9 @@ This project began as a curiosity-driven exploration of publicly available USPS 
 
 └── checking_output.ipynb # Utility to extract best CV score from training logs
 
+├── reportcontents_USPS # Markdown file (with images) going into the system design for this
+
+
 ## Core libraries used:
 requests, beautifulsoup4 — scraping
 pandas, numpy, glob — data handling
