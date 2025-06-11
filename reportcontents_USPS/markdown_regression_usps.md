@@ -135,11 +135,11 @@ merged_df = merged_df.drop(columns=['County'])
 
 After running the above command for every other column, I checked how our dataframe was doing.
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%203.png)
+![image.png](images/image%203.png)
 
 Yikes! That’s a ton of memory, plus we still have two columns of object type. I’m going to have to deal with the memory usage of the dataframe soon. For now I focused on the two remaining object type columns.
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%204.png)
+![image.png](images/image%204.png)
 
 In our case our object columns are ‘Bldg Occu Date’ and ‘Int Sq Ft’. Starting with the ‘Int Sq Ft’ column we have NaN values which cause an error when attempting to convert to int.
 
@@ -168,7 +168,7 @@ sns.histplot(merged_df['Int Sq Ft'], bins=40, kde=True, color='blue')
 
 ```
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%205.png)
+![image.png](images/image%205.png)
 
 This histogram shows that most buildings have small internal square footage, but there seem to be some with extremely large internal square footage (1.75 million square feet!). For a sanity check i went on wikipedia and saw that out of the 3 buildings world wide with over a million square feet floor area, USPS controls none of them. This seems to be a mistake in the data.
 
@@ -178,15 +178,15 @@ In reality the data is heavily skewed towards smaller buildings
 
 (Full zoom)
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%206.png)
+![image.png](images/image%206.png)
 
 (Zoomed in more)
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%207.png)
+![image.png](images/image%207.png)
 
 (Focusing exclusively on the left)
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%208.png)
+![image.png](images/image%208.png)
 
 This data shows us that a majority of our buildings are between 500 to 1000 square feet in size. 
 
@@ -197,7 +197,7 @@ sns.scatterplot(data=merged_df, x='Bldg Occu Date', y='Int Sq Ft', alpha=0.6, co
 
 ```
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%209.png)
+![image.png](images/image%209.png)
 
 This graph shows us that a lot of our buildings are small, and most seem to be created between 1960 and 2000.
 
@@ -207,11 +207,11 @@ I created this graph in a very similar way to the above graphs
 sns.histplot(merged_df['Bldg Occu Date'], bins=40, kde=True, color='blue')
 ```
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%2010.png)
+![image.png](images/image%2010.png)
 
 The number 30,000 represents the year 1983, which seems to be when most of the buildings were created (opened for human occupancy). Out of sheer curiosity I increased the number of bins and replotted the graph.
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%2011.png)
+![image.png](images/image%2011.png)
 
 After settings the parameter bins to 400, it seems that almost all our buildings were open for human occupancy at the same time. This is very interesting.
 
