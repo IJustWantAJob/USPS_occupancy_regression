@@ -87,7 +87,9 @@ At this point we have a directory with many .csv files that contain the informat
 
 After accessing just one csv as a dataframe inside my python notebook I noticed that by dropping 2 rows, it makes aligns the true column names with the top of the dataframe (this was also true for other dataframes).
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image.png)
+
+
+![image.png](reportcontents_USPS/images/image.png)
 
 One file individually looks great! Let’s access every file and append them into one dataframe. Because each dataframe has the same column names, we can keep our number of columns the same, and instead add on more rows (for each state).
 
