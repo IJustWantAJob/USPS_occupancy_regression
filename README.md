@@ -55,8 +55,11 @@ This project began as a curiosity-driven exploration of publicly available USPS 
 ## Repository Structure
 
 ├── README.md # This overview
+
 ├── scrape_beautifulsoup.py # Web scraper for FOIA CSVs
+
 ├── webscraping_cleanup.ipynb # Jupyter notebook covering cleaning, EDA, modeling
+
 └── checking_output.ipynb # Utility to extract best CV score from training logs
 
 ## Core libraries used:
