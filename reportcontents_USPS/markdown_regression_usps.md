@@ -103,13 +103,13 @@ After appending every csv into one dataframe, we finally have our combined dataf
 
 I decided to look at the dataframe and see what our data looks like.
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%201.png)
+![image.png](images/image%201.png)
 
 Our dataframe has a few new columns, with some looking like they’re state specific (OHIO 1 for example could be an excess column from Ohio, same with Akron which is located in Ohio and home of Lebron James and Stephen Curry). 
 
 Instead of dealing with all those columns I decided to delete many of them and only focus on a few columns that I think are useful.
 
-![image.png](Webscraping%20Regression%2020fdb50af2268045beb7e3db05873df0/image%202.png)
+![image.png](images/image%202.png)
 
 This itself is a good dataframe, but it would be hard to fit a regressor model and find the building occupancy date with the existing columns. To fix this issue I implemented one-hot encoding for every County (and eventually every column) so we could pass it into a machine learning model.
 
