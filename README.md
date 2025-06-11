@@ -2,6 +2,8 @@
 
 A comprehensive, end-to-end machine learning pipeline that scrapes, cleans, explores, and models USPS facility data to predict building occupancy dates. By converting a sprawling Freedom of Information Act (FOIA) dataset into actionable insights, this project demonstrates how to identify which postal facilities may need retrofits first, based on age and size characteristics.
 
+Read the full (ML design process) report here:
+
 ---
 
 ## Table of Contents
