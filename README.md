@@ -20,7 +20,6 @@ This README is structured to give an overview of the project, for a focus on the
 - [Evaluation Metrics & Results](#evaluation-metrics--results)  
 - [Key Insights & Interpretation](#key-insights--interpretation)  
 - [Future Directions](#future-directions)  
-- [Verification of README Length](#verification-of-readme-length)  
 
 ---
 
