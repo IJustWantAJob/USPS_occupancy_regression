@@ -89,7 +89,8 @@ After accessing just one csv as a dataframe inside my python notebook I noticed 
 
 
 
-![image.png](images/image.png)
+<img src="images/image.png" alt="image.png" width="50%" height="50%" />
+
 
 One file individually looks great! Let’s access every file and append them into one dataframe. Because each dataframe has the same column names, we can keep our number of columns the same, and instead add on more rows (for each state).
 
